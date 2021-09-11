@@ -1,0 +1,75 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "Map",
+"language": "GDScript",
+"path": "res://src/mapGen/Map.gd"
+}, {
+"base": "Node",
+"class": "MapGenHelper",
+"language": "GDScript",
+"path": "res://src/mapGen/MapGenHelper.gd"
+}, {
+"base": "Node",
+"class": "NthMut",
+"language": "GDScript",
+"path": "res://src/mapGen/Mutators/NthTileMut.gd"
+}, {
+"base": "Node",
+"class": "OSNoiseMod",
+"language": "GDScript",
+"path": "res://src/mapGen/Mutators/OSNoiseMut.gd"
+}, {
+"base": "Node",
+"class": "RandBlockMut",
+"language": "GDScript",
+"path": "res://src/mapGen/Mutators/RandBlockMut.gd"
+}, {
+"base": "Node",
+"class": "RandLineMut",
+"language": "GDScript",
+"path": "res://src/mapGen/Mutators/RandLineMut.gd"
+}, {
+"base": "Node",
+"class": "SymMod",
+"language": "GDScript",
+"path": "res://src/mapGen/Modifiers/SymMod.gd"
+}, {
+"base": "Node",
+"class": "WallMut",
+"language": "GDScript",
+"path": "res://src/mapGen/Mutators/WallMut.gd"
+} ]
+_global_script_class_icons={
+"Map": "",
+"MapGenHelper": "",
+"NthMut": "",
+"OSNoiseMod": "",
+"RandBlockMut": "",
+"RandLineMut": "",
+"SymMod": "",
+"WallMut": ""
+}
+
+[application]
+
+config/name="MapGenAgain"
+run/main_scene="res://src/mapGen/Test.tscn"
+config/icon="res://icon.png"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

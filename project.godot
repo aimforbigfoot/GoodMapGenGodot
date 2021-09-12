@@ -10,6 +10,11 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Node",
+"class": "DrunkMut",
+"language": "GDScript",
+"path": "res://src/mapGen/Modifiers/DrunkMod.gd"
+}, {
+"base": "Node",
 "class": "GrowMod",
 "language": "GDScript",
 "path": "res://src/mapGen/Modifiers/GrowMod.gd"
@@ -23,6 +28,11 @@ _global_script_classes=[ {
 "class": "MapGenHelper",
 "language": "GDScript",
 "path": "res://src/mapGen/MapGenHelper.gd"
+}, {
+"base": "Node",
+"class": "MiddleBlobMut",
+"language": "GDScript",
+"path": "res://src/mapGen/Mutators/MiddleBlobMut.gd"
 }, {
 "base": "Node",
 "class": "NthMut",
@@ -45,9 +55,19 @@ _global_script_classes=[ {
 "path": "res://src/mapGen/Mutators/RandLineMut.gd"
 }, {
 "base": "Node",
+"class": "SmoothMod",
+"language": "GDScript",
+"path": "res://src/mapGen/Modifiers/SmoothMod.gd"
+}, {
+"base": "Node",
 "class": "SymMod",
 "language": "GDScript",
 "path": "res://src/mapGen/Modifiers/SymMod.gd"
+}, {
+"base": "Node",
+"class": "WalkerMut",
+"language": "GDScript",
+"path": "res://src/mapGen/Mutators/WalkerMut.gd"
 }, {
 "base": "Node",
 "class": "WallMut",
@@ -55,14 +75,18 @@ _global_script_classes=[ {
 "path": "res://src/mapGen/Mutators/WallMut.gd"
 } ]
 _global_script_class_icons={
+"DrunkMut": "",
 "GrowMod": "",
 "Map": "",
 "MapGenHelper": "",
+"MiddleBlobMut": "",
 "NthMut": "",
 "OSNoiseMod": "",
 "RandBlockMut": "",
 "RandLineMut": "",
+"SmoothMod": "",
 "SymMod": "",
+"WalkerMut": "",
 "WallMut": ""
 }
 

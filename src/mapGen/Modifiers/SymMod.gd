@@ -1,6 +1,11 @@
 extends Node
 class_name SymMod
 
+static func foldMapInFourths(mapIn:Map) -> Map:
+	var arrToModify : Array = []
+	var tempMap := foldMapInHalfAlongMiddleXAxis( mapIn )
+	arrToModify = foldMapInHalfAlongMiddleYAxis( tempMap ).getMap()
+	return MapGenHelper.createAMapWithArrPassedIn( arrToModify )
 
 
 static func foldMapInHalfAlongMiddleYAxis(mapIn:Map) -> Map:

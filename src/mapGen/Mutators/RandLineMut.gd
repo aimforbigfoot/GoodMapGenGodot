@@ -22,7 +22,9 @@ static func getRandomLineOnMap(tileToPlace:int=MapGenHelper.TILES.FLOOR  ,  perc
 		else:
 			cursor = moveVecRandomly(cursor)
 			percentChanceToMoveRandomlyModded -= rateToDecraseRandom
-		lineArr[cursor.y][cursor.x] = tileToPlace
+		if (cursor.y < lineArr.size() and cursor.y > 0):
+			if ( cursor.x < lineArr[cursor.y].size() and cursor.x > 0 ):
+				lineArr[cursor.y][cursor.x] = tileToPlace
 		if cursor == endPos:
 			break
 	

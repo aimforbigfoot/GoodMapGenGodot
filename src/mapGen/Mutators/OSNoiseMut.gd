@@ -1,4 +1,3 @@
-extends Node
 class_name OSNoiseMod
 
 static func getOSNoiseOnMap(   ) -> Map:

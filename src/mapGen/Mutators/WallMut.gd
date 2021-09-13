@@ -4,7 +4,7 @@ class_name WallMut
 const defaultThicknessOfWall :int= 1
 
 static func getMapForWall(thicknessOfWall:int=defaultThicknessOfWall) -> Map:
-	var wallArr : Array = MapGenHelper.getBlankMap( MapGenHelper.TILES.BLANK )
+	var wallArr : Array = MapGenHelper.getBlankMapArray( MapGenHelper.TILES.BLANK )
 	
 	for horizontalNum in MapGenHelper.ySizeOfMap:
 		for thicknessVal in thicknessOfWall:

@@ -39,7 +39,7 @@ static func getASafeModableMap(mapIn:Map, sizeOfRing:int=2) -> Map:
 static func combineMaps(map1:Map, map2:Map, operation:int) -> Map:
 	var arr1:Array= map1.getMap()
 	var arr2:Array= map2.getMap()
-	var resultArr : Array = getBlankMap( TILES.BLANK )
+	var resultArr : Array = getBlankMapArray( TILES.BLANK )
 	
 	for y in ySizeOfMap:
 		for x in xSizeOfMap:
@@ -55,7 +55,7 @@ static func printMap( arr:Array ) -> void:
 				stringToPrint += str(num)
 			rowToPrint+=stringToPrint+" "
 		print(rowToPrint,"\n")
-static func getBlankMap( typeToPlaceEverywhere:int ) -> Array:
+static func getBlankMapArray( typeToPlaceEverywhere:int ) -> Array:
 	var arr : Array
 	for y in xSizeOfMap:
 		arr.append([])

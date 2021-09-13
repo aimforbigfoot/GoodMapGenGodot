@@ -2,7 +2,7 @@ extends Node
 class_name NthMut
 
 static func getMapWithNthTilePlacedIn( tileIn:int=MapGenHelper.TILES.WALL, everyWhat:int=10   ) -> Map:
-	var arrOfTiles := MapGenHelper.getBlankMap( MapGenHelper.TILES.BLANK )
+	var arrOfTiles := MapGenHelper.getBlankMapArray( MapGenHelper.TILES.BLANK )
 	var ind := 0
 	for x in MapGenHelper.xSizeOfMap:
 		for y in MapGenHelper.ySizeOfMap:

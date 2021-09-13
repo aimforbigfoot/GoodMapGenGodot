@@ -7,7 +7,7 @@ const rateToDecraseRandom :float=0.01
 
 static func getRandomLineOnMap(tileToPlace:int=MapGenHelper.TILES.FLOOR  ,  percentChanceToMoveRandomly:float=drunkPercent) -> Map:
 	var percentChanceToMoveRandomlyModded := percentChanceToMoveRandomly
-	var lineArr :Array= MapGenHelper.getBlankMap(MapGenHelper.TILES.BLANK)
+	var lineArr :Array= MapGenHelper.getBlankMapArray(MapGenHelper.TILES.BLANK)
 	
 	var startPos := MapGenHelper.getRandPosOnMap()
 	var cursor := startPos

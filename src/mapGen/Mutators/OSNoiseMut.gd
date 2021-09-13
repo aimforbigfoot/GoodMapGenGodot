@@ -1,7 +1,7 @@
 class_name OSNoiseMod
 
 static func getOSNoiseOnMap(   ) -> Map:
-	var arrOfOSN := MapGenHelper.getBlankMap( MapGenHelper.TILES.BLANK )
+	var arrOfOSN := MapGenHelper.getBlankMapArray( MapGenHelper.TILES.BLANK )
 	
 	var osn := OpenSimplexNoise.new()
 	osn.seed = randi()
